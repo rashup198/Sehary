@@ -5,22 +5,31 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 import { RiContactsBookFill } from "react-icons/ri";
 import "../index.css"
 import { useAuth0 } from "@auth0/auth0-react";
+import { Divide as Hamburger } from 'hamburger-react'
+import { useState } from 'react';
 
 
 const Navbar = () => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const {user,isAuthenticated} = useAuth0();
+  const [isOpen, setOpen] = useState(false)
+  
+
+ 
   return (
     <div>
-      <nav classname="">
+      <nav classname="nav-item">
 
-        <div className='flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px]'>
+        <div className=' flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px]'>
         <a href='/'><img src="../logo.jpg" className="h-[79px] " alt="logo" /></a>
 
-
+        <div className='menu-icons' >
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
 
         <ul className="nav-menu flex gap-9">
+            
             <li className=''>
                <a href='/' className='value flex items-center gap-2'><AiFillHome/>Home</a> 
             </li>
@@ -46,6 +55,7 @@ const Navbar = () => {
           <button className='btnLogin' onClick={() => loginWithRedirect()}>Log In</button>
           }
           </div>
+          
         </ul>
         </div>
 
