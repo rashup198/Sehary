@@ -46,6 +46,7 @@
     z-index: -5;
 }
 
+
 /* .nav-menu.active{
     left: 0px;    
     opacity: 1;
@@ -87,6 +88,9 @@
     font-size: larger;
     font-weight: bolder;
     text-decoration: underline;
+}
+.menu-icons{
+  display: block;
 }
 
     
