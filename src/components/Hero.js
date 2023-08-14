@@ -60,7 +60,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center text-[50px] relative -top-[530px] text-gray-700 ">
+        className="text-center lg:text-[50px] relative lg:-top-[530px] text-gray-700 sm:text-center sm:text-sm ">
         Travel Like Never Before With Sehary
         </MovingText>
         <MovingText
@@ -71,7 +71,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center text-[50px] relative -top-[490px] text-gray-700 ">
+        className="text-center lg:text-[50px] relative lg:-top-[490px] text-gray-700 sm:text-center ">
                     <a href='https://wa.me/+918889947761' target='blank' class="relative inline-block text-lg group">
             <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
             <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
