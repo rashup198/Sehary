@@ -24,3 +24,70 @@
 .value:hover::before {
   transform: scaleX(1);
 }
+
+@media screen and (max-width: 800px) {
+  .nav-item{
+    z-index: 25;
+  }
+    .nav-menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: white;
+   width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    opacity: 1;
+    align-items: stretch;
+    padding: 105px 0px 30px 0px;
+    margin: 0px;
+    z-index: -5;
+}
+
+/* .nav-menu.active{
+    left: 0px;    
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+} */
+
+.value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.value:hover{
+    background-color: #f42a31;
+    color: white;
+}
+
+.btnLogin{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 0px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: #000000 2px solid;
+    border-radius: 10px;
+}
+.btnLogin:hover{
+    background-color: #000000;
+    color: white;
+}
+.user{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+    
+}
