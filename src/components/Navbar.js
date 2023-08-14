@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className=' flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px]'>
         <a href='/'><img src="../logo.jpg" className="h-[79px] " alt="logo" /></a>
 
-        <div className='menu-icons' >
+        <div className='menu-icons hidden' >
         <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
 
