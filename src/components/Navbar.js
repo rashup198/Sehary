@@ -19,14 +19,18 @@ const Navbar = () => {
  
   return (
     <div>
-      <nav classname="nav-item">
+      <nav classname="nav-item ">
 
-        <div className=' flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px]'>
+        
+
+        <div className='headed flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px] fixed top-[10px] left-[15px] z-[1000] bg-white'>
         <a href='/'><img src="../logo.jpg" className="h-[79px] " alt="logo" /></a>
 
         <div className='menu-icons hidden' >
         <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
+
+        
 
         <ul className="nav-menu flex gap-9">
             
@@ -49,16 +53,13 @@ const Navbar = () => {
        
        
        <div>
-        {
-          
+        {          
           isAuthenticated ?<button className='btnLogin border-2 border-black p-[2px] pl-[4px] pr-[4px] rounded-[5px] hover:bg-black hover:text-white transition-all duration-200  ' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out</button> :
           <button className='btnLogin' onClick={() => loginWithRedirect()}>Log In</button>
           }
-          </div>
-          
+          </div>         
         </ul>
         </div>
-
       </nav>
     </div>
   )
