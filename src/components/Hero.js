@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Hero.css"
+import "../index.css"
 import { useEffect, useState } from "react";
 import image1 from "./1.jpg"
 import image2 from "./2.jpg"
@@ -20,7 +21,8 @@ useEffect(() => {
   const start = () => {
     console.log('start')
     const _start = setInterval(() => {
-      setSelectedImage(selectedImage => selectedImage >= 2 ? selectedImage + 1 : 0)
+      setSelectedImage(selectedImage => selectedImage < 1 ? selectedImage + 1 : 0)
+      console.log("changed hero img");
     }, 5000)
     setId(_start)
   }
@@ -31,9 +33,9 @@ useEffect(() => {
   }
 
  return (   
-    <div className='hero lg:mt-[0px]  sm:mt-[100px]'>
+    <div className=' lg:mt-[0px]  sm:mt-[100px]'>
     <img
-    src={allImages[selectedImage]} className='heroimg lg:h-[100vh] w-[100vw] transition-all duration-[400] ease-in-out '/> <br />
+    src={allImages[selectedImage]} className='h-[100vh] w-[100vw] transition-all duration-[400] '/> <br />
     <button className='relative bottom-[350px] left-[10px] z-0 cursor-pointer'
         onClick={() => {
           if (selectedImage >= 0)
@@ -56,7 +58,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="heroText text-center text-[55px] sm:relative -top-[580px]  font-extrabold text-white">
+        className="text-center text-[55px] relative -top-[580px]  font-extrabold text-white">
         Every Journey is Special
        
         </MovingText>
@@ -69,7 +71,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="heroText text-center text-[55px] sm:relative -top-[550px] font-extrabold text-white">
+        className="text-center text-[55px] relative -top-[560px] font-extrabold text-white">
         Travel Like Never Before With Sehary 
         
         </MovingText>
@@ -83,7 +85,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="btn text-center lg:text-[50px] relative lg:-top-[440px] text-gray-700 sm:text-center ">
+        className="btn text-center lg:text-[50px] relative lg:-top-[480px] text-gray-700 sm:text-center ">
                     <a href='https://wa.me/+918889947761' target='blank' class="relative inline-block text-lg group">
             <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
             <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
