@@ -7,6 +7,7 @@ import "../index.css"
 import { useAuth0 } from "@auth0/auth0-react";
 import { Divide as Hamburger } from 'hamburger-react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -35,16 +36,16 @@ const Navbar = () => {
         <ul className="nav-menu flex gap-9">
             
             <li className=''>
-               <a href='/' className='value flex items-center gap-2'><AiFillHome/>Home</a> 
+               <Link to="/" className='value flex items-center gap-2'><AiFillHome/>Home</Link> 
             </li>
             <li className=''>
-               <a href='/' className='value flex items-center gap-2'><AiFillCar/>Travel</a> 
+               <Link to="/travel" className='value flex items-center gap-2'><AiFillCar/>Travel</Link> 
             </li>
             <li className=''>
-               <a href='/' className='value flex items-center gap-2'><BsFillInfoCircleFill/>About Us</a> 
+               <Link href='/about' className='value flex items-center gap-2'><BsFillInfoCircleFill/>About Us</Link> 
             </li>
             <li className=''>
-               <a href='/' className='value flex items-center gap-2'><RiContactsBookFill/>Contact Us</a> 
+               <Link href='/contact' className='value flex items-center gap-2'><RiContactsBookFill/>Contact Us</Link> 
             </li>
             { isAuthenticated && <div className='user'>
           <p className='user_detail'>{user.name}</p>
