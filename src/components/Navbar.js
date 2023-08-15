@@ -25,7 +25,7 @@ const Navbar = () => {
         
 
         <div className='headed flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px] fixed top-[10px] left-[15px] z-[1000] bg-white'>
-        <a href='/'><img src="../logo.jpg" className="h-[79px] " alt="logo" /></a>
+        <Link to='/'><img src="../logo.jpg" className="h-[79px] " alt="logo" /></Link>
 
         <div className='menu-icons hidden' >
         <Hamburger toggled={isOpen} toggle={setOpen} />
@@ -42,10 +42,10 @@ const Navbar = () => {
                <Link to="/travel" className='value flex items-center gap-2'><AiFillCar/>Travel</Link> 
             </li>
             <li className=''>
-               <Link href='/about' className='value flex items-center gap-2'><BsFillInfoCircleFill/>About Us</Link> 
+               <Link to='/about' className='value flex items-center gap-2'><BsFillInfoCircleFill/>About Us</Link> 
             </li>
             <li className=''>
-               <Link href='/contact' className='value flex items-center gap-2'><RiContactsBookFill/>Contact Us</Link> 
+               <Link to='/contact' className='value flex items-center gap-2'><RiContactsBookFill/>Contact Us</Link> 
             </li>
             { isAuthenticated && <div className='user'>
           <p className='user_detail'>{user.name}</p>
