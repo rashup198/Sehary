@@ -3,8 +3,6 @@ import "../index.css"
 import { useEffect, useState } from "react";
 import image1 from "./1.jpg"
 import image2 from "./2.jpg"
-import image3 from "./3.jpg"
-import image4 from "./4.jpg"
 import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
 import MovingText from 'react-moving-text'
 
@@ -12,7 +10,7 @@ import MovingText from 'react-moving-text'
 
 const Hero = () => {
     const [selectedImage, setSelectedImage] = useState(0)
-  const [allImages, setAllImages] = useState([image1, image2, image3, image4])
+  const [allImages, setAllImages] = useState([image1, image2, ])
   const [id, setId] = useState(null)
 
 useEffect(() => {
@@ -22,7 +20,7 @@ useEffect(() => {
   const start = () => {
     console.log('start')
     const _start = setInterval(() => {
-      setSelectedImage(selectedImage => selectedImage < 3 ? selectedImage + 1 : 0)
+      setSelectedImage(selectedImage => selectedImage >= 2 ? selectedImage + 1 : 0)
     }, 5000)
     setId(_start)
   }
@@ -35,22 +33,33 @@ useEffect(() => {
  return (   
     <div className='hero lg:mt-[0px]  sm:mt-[100px]'>
     <img
-    src={allImages[selectedImage]} className='lg:h-[100vh] w-[100vw] transition-all duration-200 '/> <br />
-    <button className='relative bottom-[350px] left-[10px] z-0'
+    src={allImages[selectedImage]} className='lg:h-[100vh] w-[100vw] transition-all duration-[400] ease-in-out '/> <br />
+    <button className='relative bottom-[350px] left-[10px] z-0 cursor-pointer'
         onClick={() => {
-          if (selectedImage > 0)
+          if (selectedImage >= 0)
             setSelectedImage(selectedImage - 1)
         }}
-      ><AiOutlineLeft  className='text-[50px] text-gray-700' ></AiOutlineLeft></button>
+      ><AiOutlineLeft  className='text-[50px] text-gray-700 cursor-pointer' ></AiOutlineLeft></button>
 
-      <button className='relative bottom-[350px] left-[93%]'
+      <button className='relative bottom-[350px] left-[93%] cursor-pointer'
         onClick={() => {
-          if (selectedImage < allImages.length - 1)
+          if (selectedImage <= allImages.length - 1)
             setSelectedImage(selectedImage + 1)
         }}
-      ><AiOutlineRight className='text-[50px] text-gray-700'></AiOutlineRight></button>
+      ><AiOutlineRight className='text-[50px] text-gray-700 cursor-pointer'></AiOutlineRight></button>
 
-      
+        <MovingText
+        type="fadeInFromLeft"
+        duration="2000ms"
+        delay="1s"
+        direction="normal"
+        timing="ease"
+        iteration="1"
+        fillMode="none"
+        className="text-center lg:text-[55px] relative lg:-top-[580px]  font-extrabold text-white sm:text-center sm:text-sm ">
+        Every Journey is Special
+       
+        </MovingText>
         
         <MovingText
         type="fadeInFromLeft"
@@ -60,9 +69,12 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center lg:text-[50px] relative lg:-top-[530px] text-gray-700 sm:text-center sm:text-sm ">
-        Travel Like Never Before With Sehary
+        className="text-center lg:text-[55px] relative lg:-top-[520px] font-extrabold text-white sm:text-center sm:text-sm ">
+        Travel Like Never Before With Sehary 
+        
         </MovingText>
+        
+      
         <MovingText
         type="fadeInFromLeft"
         duration="2000ms"
@@ -71,7 +83,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center lg:text-[50px] relative lg:-top-[490px] text-gray-700 sm:text-center ">
+        className="text-center lg:text-[50px] relative lg:-top-[440px] text-gray-700 sm:text-center ">
                     <a href='https://wa.me/+918889947761' target='blank' class="relative inline-block text-lg group">
             <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
             <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
