@@ -1,5 +1,5 @@
 import React from 'react'
-import "../index.css"
+import "./Hero.css"
 import { useEffect, useState } from "react";
 import image1 from "./1.jpg"
 import image2 from "./2.jpg"
@@ -33,20 +33,20 @@ useEffect(() => {
  return (   
     <div className='hero lg:mt-[0px]  sm:mt-[100px]'>
     <img
-    src={allImages[selectedImage]} className='lg:h-[100vh] w-[100vw] transition-all duration-[400] ease-in-out '/> <br />
+    src={allImages[selectedImage]} className='heroimg lg:h-[100vh] w-[100vw] transition-all duration-[400] ease-in-out '/> <br />
     <button className='relative bottom-[350px] left-[10px] z-0 cursor-pointer'
         onClick={() => {
           if (selectedImage >= 0)
             setSelectedImage(selectedImage - 1)
         }}
-      ><AiOutlineLeft  className='text-[50px] text-gray-700 cursor-pointer' ></AiOutlineLeft></button>
+      ><AiOutlineLeft  className='arrow text-[50px] text-gray-700 cursor-pointer' ></AiOutlineLeft></button>
 
       <button className='relative bottom-[350px] left-[93%] cursor-pointer'
         onClick={() => {
           if (selectedImage <= allImages.length - 1)
             setSelectedImage(selectedImage + 1)
         }}
-      ><AiOutlineRight className='text-[50px] text-gray-700 cursor-pointer'></AiOutlineRight></button>
+      ><AiOutlineRight className='arrow text-[50px] text-gray-700 cursor-pointer'></AiOutlineRight></button>
 
         <MovingText
         type="fadeInFromLeft"
@@ -56,7 +56,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center lg:text-[55px] relative lg:-top-[580px]  font-extrabold text-white sm:text-center sm:text-sm ">
+        className="heroText text-center text-[55px] sm:relative -top-[580px]  font-extrabold text-white">
         Every Journey is Special
        
         </MovingText>
@@ -69,7 +69,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center lg:text-[55px] relative lg:-top-[520px] font-extrabold text-white sm:text-center sm:text-sm ">
+        className="heroText text-center text-[55px] sm:relative -top-[550px] font-extrabold text-white">
         Travel Like Never Before With Sehary 
         
         </MovingText>
@@ -83,7 +83,7 @@ useEffect(() => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="text-center lg:text-[50px] relative lg:-top-[440px] text-gray-700 sm:text-center ">
+        className="btn text-center lg:text-[50px] relative lg:-top-[440px] text-gray-700 sm:text-center ">
                     <a href='https://wa.me/+918889947761' target='blank' class="relative inline-block text-lg group">
             <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
             <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
