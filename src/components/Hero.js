@@ -7,6 +7,7 @@ import image2 from "./2.jpg"
 import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
 import MovingText from 'react-moving-text'
 import RecentTrip from './RecentTrip';
+import Destinations from './Destinations';
 
 
 
@@ -96,7 +97,7 @@ useEffect(() => {
             <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
             </a>
         </MovingText>
-
+        <Destinations></Destinations>
         <RecentTrip></RecentTrip>
   </div>
  )
