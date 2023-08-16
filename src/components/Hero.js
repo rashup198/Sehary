@@ -6,6 +6,7 @@ import image1 from "./1.jpg"
 import image2 from "./2.jpg"
 import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
 import MovingText from 'react-moving-text'
+import RecentTrip from './RecentTrip';
 
 
 
@@ -35,7 +36,7 @@ useEffect(() => {
  return (   
     <div className=' lg:mt-[0px]  sm:mt-[100px]'>
     <img
-    src={allImages[selectedImage]} className='h-[100vh] w-[100vw] transition-all duration-[400] '/> <br />
+    src={allImages[selectedImage]} className='h-[100vh] w-[100vw]'/> <br />
     <button className='relative bottom-[350px] left-[10px] z-0 cursor-pointer'
         onClick={() => {
           if (selectedImage >= 0)
@@ -95,6 +96,8 @@ useEffect(() => {
             <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
             </a>
         </MovingText>
+
+        <RecentTrip></RecentTrip>
   </div>
  )
 }
