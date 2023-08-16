@@ -5,7 +5,14 @@
     object-fit: cover;
     opacity: 0.8;
     filter: brightness(0.9);
-
+ 
+}
+.travel{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.8;
+    filter: brightness(0.9);
 }
 
 
@@ -27,7 +34,7 @@ img{
     font-weight: 800;
     text-align: center;
     margin-top: 30px;
-    color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
 }
 .heroText p{
     font-size: 1.5rem;
