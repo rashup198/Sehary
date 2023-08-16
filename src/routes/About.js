@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 import Parent from '../components/Parent';
 import "../index.css"
-import aboutImg from "../asset/aboutImg1.jpg";
+import aboutImg from "../asset/aboutImg.jpg";
 
 
 const About = () => {
