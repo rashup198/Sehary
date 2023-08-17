@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Parent from '../components/Parent';
 import "../index.css"
 import aboutImg from "../asset/aboutImg.jpg";
+import Footer from '../components/Footer';
 
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
       >
       </Parent>
 
-        About 
+        <Footer></Footer>
       
     </div>
   )
