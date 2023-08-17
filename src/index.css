@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&family=Raleway:wght@100;200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:wght@100;200;300;500;600&family=Quicksand:wght@600;700&family=Raleway:wght@100;200&display=swap');
 
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
 
+.txt{
+    font-family: "Quicksand", sans-serif;
+}
