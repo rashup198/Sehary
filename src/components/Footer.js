@@ -26,7 +26,8 @@ const Footer = () => {
         
 
         <div className='lower ml-[100px] mr-[100px] mb-[50px]'>
-            <div>
+            <div className='flex justify-between'>
+                <div>
             <h1 className='text-white text-[30px] font-extrabold'>Navigation</h1>
 
             <ul className=' pb-[50px] '>
@@ -42,7 +43,68 @@ const Footer = () => {
             <li className='mt-[8px]'>
                <Link to='/contact' className='hover:underline underline-offset-2 text-white'>Contact Us</Link> 
             </li>
+            </ul> 
+            </div>  
+
+            <div>
+            <h1 className='text-white text-[30px] font-extrabold'>Services</h1>
+
+            <ul className=' pb-[50px] '>
+            <li className='mt-[8px]'>
+               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Weekend Gateway</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Backpacking Trips</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Offbeat Stays</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Sehary Finance</Link> 
+            </li>
             </ul>
+            </div>
+
+            <div>
+            <h1 className='text-white text-[30px] font-extrabold'>Product</h1>
+
+            <ul className=' pb-[50px] '>
+            <li className='mt-[8px]'>
+               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Why Sehary?</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Testimonials</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Member Discount</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to='/home' className='hover:underline underline-offset-2 text-white'></Link> 
+            </li>
+            </ul>
+            </div>
+
+            <div>
+            <h1 className='text-white text-[30px] font-extrabold'>Other</h1>
+
+            <ul className=' pb-[50px] '>
+            <li className='mt-[8px]'>
+                <a href='https://wa.me/+918889947761' target='blank' class="hover:underline underline-offset-2 text-white ">Contact us</a>
+            </li>
+            <li className='mt-[8px]'>
+               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Career</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Blogs</Link> 
+            </li>
+            <li className='mt-[8px]'>
+               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Partnership</Link> 
+            </li>
+            </ul>
+            </div>
+
+            
+
             </div>
         </div>
       
