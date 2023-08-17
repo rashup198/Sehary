@@ -20,9 +20,7 @@ const Navbar = () => {
  
   return (
     <div>
-      <nav classname="nav-item ">
-
-        
+      <nav classname="nav-item">
 
         <div className='headed flex justify-between items-center m-5 pl-[30px] pr-[30px] shadow-2xl w-[95%] h-[80px] rounded-[13px] fixed top-[10px] left-[15px] z-[1000] bg-white'>
         <Link to='/'><img src="../logo.jpg" className="h-[79px] " alt="logo" /></Link>
@@ -36,7 +34,7 @@ const Navbar = () => {
         <ul className="nav-menu flex gap-9">
             
             <li className=''>
-               <Link to="/" className='value flex items-center gap-2'><AiFillHome/>Home</Link> 
+               <Link to="/home" className='value flex items-center gap-2'><AiFillHome/>Home</Link> 
             </li>
             <li className=''>
                <Link to="/travel" className='value flex items-center gap-2'><AiFillCar/>Travel</Link> 
