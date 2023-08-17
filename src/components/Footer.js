@@ -70,16 +70,16 @@ const Footer = () => {
 
             <ul className=' pb-[50px] '>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Why Sehary?</Link> 
+               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Testimonials</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Testimonials</Link> 
+               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Member Discount</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Member Discount</Link> 
+               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Partnership</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className='hover:underline underline-offset-2 text-white'></Link> 
+               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Why Sehary?</Link> 
             </li>
             </ul>
             </div>
@@ -98,13 +98,14 @@ const Footer = () => {
                <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Blogs</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Partnership</Link> 
+               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Privacy Policy</Link> 
             </li>
             </ul>
             </div>
 
-            
-
+            </div>
+            <div>
+                <h1 className='text-center text-white'>Copyright ©2023 Sehary, All rights reserved</h1>
             </div>
         </div>
       
