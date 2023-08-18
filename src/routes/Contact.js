@@ -4,6 +4,7 @@ import Parent from '../components/Parent';
 import "../index.css"
 import contact from "../asset/sergei-a--heLWtuAN3c-unsplash.jpg"
 import Footer from '../components/Footer';
+import Form from '../components/Form';
 
 
 const Contact = () => {
@@ -17,6 +18,7 @@ const Contact = () => {
       btnClass="btn"
       >
       </Parent>
+      <Form></Form>
       
       <Footer></Footer>
     </div>
