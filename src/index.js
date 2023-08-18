@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import Contact from './routes/Contact';
 import About from './routes/About';
 import Travel from './routes/Travel';
+import Error from './routes/Error';
 
 
 
@@ -31,6 +32,7 @@ root.render(
     <Route path='/travel' element={<Travel></Travel>}></Route>
     <Route path='/about' element={<About></About>}></Route>
     <Route path='/contact' element={<Contact></Contact>}></Route>
+    <Route path='*' element={<Error></Error>}></Route>
     
 
     </Routes>
