@@ -27,7 +27,7 @@ root.render(
     
     <Routes>
     
-    <Route path='/home' element={<Hero></Hero>}></Route>
+    <Route path='/' element={<Hero></Hero>}></Route>
     <Route path='/travel' element={<Travel></Travel>}></Route>
     <Route path='/about' element={<About></About>}></Route>
     <Route path='/contact' element={<Contact></Contact>}></Route>
