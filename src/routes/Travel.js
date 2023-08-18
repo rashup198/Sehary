@@ -5,6 +5,8 @@ import "../index.css"
 import image from "../asset/image.jpg"
 import Destinations from '../components/Destinations';
 import Footer from '../components/Footer';
+import MovingText from 'react-moving-text'
+
 
 const Travel = () => {
   return (
@@ -19,7 +21,17 @@ const Travel = () => {
     >
       </Parent>
       <div className='mt-[300px]'>
-      <Destinations ></Destinations>
+      <MovingText
+            type="flipFromBottom"
+            duration="1500ms"
+            delay="4s"
+            direction="normal"
+            timing="ease"
+            iteration="1"
+            fillMode="none">
+           
+           <Destinations></Destinations>        
+          </MovingText>
       </div>
 
       <Footer></Footer>

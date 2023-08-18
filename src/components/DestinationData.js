@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import { FaMapMarker } from "react-icons/fa";
 
+
 function DestinationData(props){
   return (
+    <>
+    
     <div className='destiCard flex flex-col w-[32%] p-[5px] text-start shadow-2xl rounded-[7px] cursor-pointer '>
       <div className='destiImage h-[200px] overflow-hidden rounded-[7px] '>
         <img alt='card-image' src={props.destiImage} className='w-[100%] h-[100%] transition-all duration-150 ease-in-out rounded-[7px] hover:transform hover:scale-[1.2]'></img>
@@ -15,6 +18,7 @@ function DestinationData(props){
         <button className='mr-[5px] border bg-black text-white rounded-[5px] p-[5px]'>Details</button>
       </div>
     </div>
+    </>
   )
 }
 

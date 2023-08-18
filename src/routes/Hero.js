@@ -98,7 +98,20 @@ useEffect(() => {
             <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
             </a>
         </MovingText>
-        <Destinations></Destinations>
+
+            
+          <MovingText
+            type="flipFromBottom"
+            duration="1500ms"
+            delay="4s"
+            direction="normal"
+            timing="ease"
+            iteration="1"
+            fillMode="none">
+           
+           <Destinations></Destinations>        
+          </MovingText>
+        
         <RecentTrip></RecentTrip>
         <Footer></Footer>
   </div>
