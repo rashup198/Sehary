@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Parent from '../components/Parent';
 import "../index.css"
 import contact from "../asset/sergei-a--heLWtuAN3c-unsplash.jpg"
+import Footer from '../components/Footer';
 
 
 const Contact = () => {
@@ -16,7 +17,8 @@ const Contact = () => {
       btnClass="btn"
       >
       </Parent>
-      Contact
+      
+      <Footer></Footer>
     </div>
   )
 }

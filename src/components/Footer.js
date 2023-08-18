@@ -32,7 +32,7 @@ const Footer = () => {
 
             <ul className=' pb-[50px] '>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Home</Link> 
+               <Link to="/" className=' hover:underline underline-offset-2 text-center text-white'>Home</Link> 
             </li>
             <li className='mt-[8px]'>
                <Link to="/travel" className=' hover:underline underline-offset-2 text-white '>Travel</Link> 
@@ -51,16 +51,16 @@ const Footer = () => {
 
             <ul className=' pb-[50px] '>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Weekend Gateway</Link> 
+               <Link to="/" className=' hover:underline underline-offset-2 text-center text-white'>Weekend Gateway</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Backpacking Trips</Link> 
+               <Link to="/" className=' hover:underline underline-offset-2 text-white '>Backpacking Trips</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Offbeat Stays</Link> 
+               <Link to='/' className=' hover:underline underline-offset-2 text-white'>Offbeat Stays</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Sehary Finance</Link> 
+               <Link to='/' className='hover:underline underline-offset-2 text-white'>Sehary Finance</Link> 
             </li>
             </ul>
             </div>
@@ -70,16 +70,16 @@ const Footer = () => {
 
             <ul className=' pb-[50px] '>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-center text-white'>Testimonials</Link> 
+               <Link to="/" className=' hover:underline underline-offset-2 text-center text-white'>Testimonials</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Member Discount</Link> 
+               <Link to="/" className=' hover:underline underline-offset-2 text-white '>Member Discount</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Partnership</Link> 
+               <Link to='/' className=' hover:underline underline-offset-2 text-white'>Partnership</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Why Sehary?</Link> 
+               <Link to='/' className='hover:underline underline-offset-2 text-white'>Why Sehary?</Link> 
             </li>
             </ul>
             </div>
@@ -92,13 +92,13 @@ const Footer = () => {
                 <a href='https://wa.me/+918889947761' target='blank' class="hover:underline underline-offset-2 text-white ">Contact us</a>
             </li>
             <li className='mt-[8px]'>
-               <Link to="/home" className=' hover:underline underline-offset-2 text-white '>Career</Link> 
+               <Link to="/" className=' hover:underline underline-offset-2 text-white '>Career</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className=' hover:underline underline-offset-2 text-white'>Blogs</Link> 
+               <Link to='/' className=' hover:underline underline-offset-2 text-white'>Blogs</Link> 
             </li>
             <li className='mt-[8px]'>
-               <Link to='/home' className='hover:underline underline-offset-2 text-white'>Privacy Policy</Link> 
+               <Link to='/' className='hover:underline underline-offset-2 text-white'>Privacy Policy</Link> 
             </li>
             </ul>
             </div>

@@ -34,7 +34,7 @@ const Navbar = () => {
         <ul className="nav-menu flex gap-9">
             
             <li className=''>
-               <Link to="/home" className='value flex items-center gap-2'><AiFillHome/>Home</Link> 
+               <Link to="/" className='value flex items-center gap-2'><AiFillHome/>Home</Link> 
             </li>
             <li className=''>
                <Link to="/travel" className='value flex items-center gap-2'><AiFillCar/>Travel</Link> 
