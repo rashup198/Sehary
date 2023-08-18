@@ -5,6 +5,7 @@ import "../index.css"
 import contact from "../asset/sergei-a--heLWtuAN3c-unsplash.jpg"
 import Footer from '../components/Footer';
 import Form from '../components/Form';
+import NewsLetter from '../components/Newsletter';
 
 
 const Contact = () => {
@@ -19,7 +20,6 @@ const Contact = () => {
       >
       </Parent>
       <Form></Form>
-      
       <Footer></Footer>
     </div>
   )
