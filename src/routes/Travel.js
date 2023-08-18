@@ -17,6 +17,7 @@ const Travel = () => {
       heroImg={image}
       heading={"Hot Locations"}
       Text={""}
+      btnClass="btn"
 
     >
       </Parent>
@@ -24,7 +25,7 @@ const Travel = () => {
       <MovingText
             type="flipFromBottom"
             duration="1500ms"
-            delay="4s"
+            delay="2s"
             direction="normal"
             timing="ease"
             iteration="1"
