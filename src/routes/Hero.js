@@ -9,6 +9,7 @@ import MovingText from 'react-moving-text'
 import RecentTrip from '../components/RecentTrip';
 import Destinations from '../components/Destinations';
 import Footer from '../components/Footer';
+import Newsletter from '../components/Newsletter';
 
 
 
@@ -113,6 +114,7 @@ useEffect(() => {
           </MovingText>
         
         <RecentTrip></RecentTrip>
+        <Newsletter></Newsletter>
         <Footer></Footer>
   </div>
  )
