@@ -4,7 +4,7 @@ const NewsLetter = () => {
     <div className='-mb-[50px]'>
          <div name='contact' className='w-full h-screen bg-[#4657f5] flex justify-center items-center p-4'>
       
-      <form method="POST" action='https://getform.io/f/7b6b959e-32b6-4f96-a96b-f02e02c666ee' className='max-w-[700px] flex flex-col w-full h-full'>
+      <form method="POST" action='https://getform.io/f/01bb9c33-6bd0-4585-be4d-efc169d667be' className='max-w-[700px] flex flex-col w-full h-full'>
   
           <div className='max-w-[1000px] p-4 flex flex-col justify-center w-full h-full'>
               <p className='text-[45px] font-bold inline border-b-4 border-pink-600 text-white pb-[1px]'>Get in Touch</p>
