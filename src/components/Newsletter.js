@@ -1,6 +1,10 @@
 import React from 'react'
 
+
 const Newsletter = () => {
+   function handlebtn(){
+    
+  }
   return (
     <div className='flex bg-[#4657f5] justify-between items-center pb-[20px] -mb-[50px] pt-[20px]'>
         <div className='ml-[100px] '>
@@ -9,10 +13,10 @@ const Newsletter = () => {
         </div>
         <div className='mr-[100px]'>
 
-            <form method="POST" action='https://getform.io/f/7b6b959e-32b6-4f96-a96b-f02e02c666ee'>
+            <form method="POST" action='https://getform.io/f/01bb9c33-6bd0-4585-be4d-efc169d667be'>
             <input type='email' name='newsLetter' placeholder="Enter your email address" className=' bg-white border p-2 w-[300px] rounded-l-md' ></input>
             
-            <button className='p-2 border border-white text-white rounded-r-md'>Subscribe</button>
+            <button className='p-2 border border-white text-white rounded-r-md' onClick={handlebtn}>Subscribe</button>
             </form>
         </div>
     </div>
