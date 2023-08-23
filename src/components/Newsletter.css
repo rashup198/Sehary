@@ -1,0 +1,56 @@
+/* For screens with a maximum width of 555px (Mobile) */
+@media (max-width: 555px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: -50px;
+      padding-top: 20px;
+      background-color: #4657f5;
+      padding: 24px;
+    }
+  
+    .textConatiner{
+      margin-bottom: 24px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .Title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  
+    .description {
+      font-size: 0.875rem;
+      color: #ffffff;
+      margin-top: 0.5rem;
+    }
+  
+    .from {
+      width: 80vw;
+      margin-left: 80px;
+    
+    }
+  
+    .inputbox {
+      background-color: #ffffff;
+      border-width: 1px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      width: 65%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+    }
+    
+    .btn{
+        width:35%;
+        padding-right: 20px;
+    }
+    
+  }
+  
