@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className='text-center text-white mt-6'>
+          <h1 className='text-center text-white mt-10 pb-[5px] -mb-[17px] md:-mb-[8px] md:mt-10 md:pb-[5px]'>
             Copyright © 2023 Sehary, All rights reserved
           </h1>
         </div>

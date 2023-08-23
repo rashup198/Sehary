@@ -10,6 +10,7 @@
       padding-top: 20px;
       background-color: #4657f5;
       padding: 24px;
+      height: 230px;
     }
   
     .textConatiner{
@@ -33,12 +34,13 @@
     .from {
       width: 80vw;
       margin-left: 80px;
-    
+      margin-bottom: 30px;
+      margin-left: 95px;
     }
   
     .inputbox {
       background-color: #ffffff;
-      border-width: 1px;
+      border-width: 0.5px;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
       width: 65%;
