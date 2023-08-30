@@ -10,6 +10,7 @@ import RecentTrip from '../components/RecentTrip';
 import Destinations from '../components/Destinations';
 import Footer from '../components/Footer';
 import Newsletter from '../components/Newsletter';
+import { Carousel } from 'react-responsive-carousel';
 
 
 

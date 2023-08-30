@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className='nav-item'>
-        <div className='headed flex w-[82%] justify-between items-center m-5 pl-[7px] pr-6 shadow-2xl md:w-[95%] h-[80px] rounded-[13px] fixed top-5 left-5 z-[1000] bg-white'>
+        <div className='headed flex w-[82%] justify-between items-center m-1 md:m-4 pl-[7px] pr-6 shadow-2xl md:w-[95%] h-[80px] rounded-[13px] fixed md:fixed top-5 left-5 z-[1000] bg-white '>
           <Link to='/'>
             <img src='../logo.jpg' className='h-[79px] ' alt='logo' />
           </Link>
@@ -25,79 +25,79 @@ const Navbar = () => {
           </div>
         
 
-        <ul
-          className={`nav-menu ${
-            isOpen ? 'flex-col gap-2 mt-20 pl-6 pr-6' : 'hidden md:flex md:gap-7 justify-center items-center '
-          }`}
-        >
-          <li className=''>
-            <Link
-              to='/'
-              className='value flex items-center gap-2 '
-              onClick={() => setOpen(true)}
-            >
-              <AiFillHome />
-              Home
-            </Link>
-          </li>
-          <li className=''>
-            <Link
-              to='/travel'
-              className='value flex items-center gap-2'
-              onClick={() => setOpen(true)}
-            >
-              <AiFillCar />
-              Travel
-            </Link>
-          </li>
-          <li className=''>
-            <Link
-              to='/about'
-              className='value flex items-center gap-2'
-              onClick={() => setOpen(true)}
-            >
-              <BsFillInfoCircleFill />
-              About Us
-            </Link>
-          </li>
-          <li className=''>
-            <Link
-              to='/contact'
-              className='value flex items-center gap-2'
-              onClick={() => setOpen(true)}
-            >
-              <RiContactsBookFill />
-              Contact Us
-            </Link>
-          </li>
-          <li>
-          {isAuthenticated && (
-            <div className='user'>
-              <p className='user_detail'>{user.name}</p>
-            </div>
-          )}
-
-          <div>
-            {isAuthenticated ? (
-              <button
-                className='btnLogin border-2 border-black p-1 pl-2 pr-2 rounded-md hover:bg-black hover:text-white transition-all duration-200'
-                onClick={() =>
-                  logout({ logoutParams: { returnTo: window.location.origin } })
-                }
+          <ul
+            className={`nav-menu ${
+              isOpen ? 'flex-col gap-2 mt-20 pl-6 pr-6' : 'hidden md:flex md:gap-7 justify-center items-center '
+            }`}
+          >
+            <li className=''>
+              <Link
+                to='/'
+                className='value flex items-center gap-2 '
+                onClick={() => setOpen(true)}
               >
-                Log Out
-              </button>
-            ) : (
-              <button
-                className='btnLogin p-1 pl-2 pr-2 rounded-md '
-                onClick={() => loginWithRedirect()}
+                <AiFillHome />
+                Home
+              </Link>
+            </li>
+            <li className=''>
+              <Link
+                to='/travel'
+                className='value flex items-center gap-2'
+                onClick={() => setOpen(true)}
               >
-                Log In
-              </button>
+                <AiFillCar />
+                Travel
+              </Link>
+            </li>
+            <li className=''>
+              <Link
+                to='/about'
+                className='value flex items-center gap-2'
+                onClick={() => setOpen(true)}
+              >
+                <BsFillInfoCircleFill />
+                About Us
+              </Link>
+            </li>
+            <li className=''>
+              <Link
+                to='/contact'
+                className='value flex items-center gap-2'
+                onClick={() => setOpen(true)}
+              >
+                <RiContactsBookFill />
+                Contact Us
+              </Link>
+            </li>
+            <li>
+            {isAuthenticated && (
+              <div className='user flex'>
+                <p className='user_detail'>{user.name}</p>
+              </div>
             )}
-          </div>
-          </li>
-        </ul>
+
+            <div>
+              {isAuthenticated ? (
+                <button
+                  className='btnLogin border-2 border-black p-1 pl-2 pr-2 rounded-md hover:bg-black hover:text-white transition-all duration-200'
+                  onClick={() =>
+                    logout({ logoutParams: { returnTo: window.location.origin } })
+                  }
+                >
+                  Log Out
+                </button>
+              ) : (
+                <button
+                  className='btnLogin p-1 pl-2 pr-2 rounded-md '
+                  onClick={() => loginWithRedirect()}
+                >
+                  Log In
+                </button>
+              )}
+            </div>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
