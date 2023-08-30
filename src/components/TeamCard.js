@@ -1,5 +1,4 @@
 import React from 'react'
-import vihari from "./vihari.png"
 import { BsLinkedin } from "react-icons/bs";
 
 const TeamCard = (props) => {

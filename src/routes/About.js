@@ -20,7 +20,9 @@ const About = () => {
       </Parent>
 
       <h1 className='text-[65px] font-bold text-center'>Our Leadership</h1>
-      <p className=' text-center text-xl'>We are a group of passionate individuals working towards changing travelling in India.</p>
+      <div className='ml-[200px] mr-[200px] mb-[100px]'>
+      <p className='text-center text-md'>Join us to redefine Indian travel. Experience transformative offbeat journeys that fuse adventure and culture. Uncover hidden treasures on the road less taken. Your incredible journey begins here.</p>
+      </div>
       <Team></Team>
 
 
