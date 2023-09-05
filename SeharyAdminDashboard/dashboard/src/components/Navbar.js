@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
         <ul className='mt-[50px]'>
           {SidebarData.map((item, index) => (
-            <li key={index} className="value text-center mt-[20px] ml-[20px]">
+            <li key={index} className="value text-center mt-[60px] ml-[30px]">
               <Link to={item.path}>
                 <div className='flex gap-[10px] items-baseline '>
                   <span className='text-[20px] hover:text-red-500'>{item.icon}</span>
