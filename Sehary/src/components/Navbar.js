@@ -3,85 +3,65 @@ import { AiFillHome, AiFillCar } from 'react-icons/ai';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
 import { RiContactsBookFill } from 'react-icons/ri';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Divide as Hamburger } from 'hamburger-react';
+import { Divide, Divide as Hamburger } from 'hamburger-react';
+import logo from "./logo.jpg"
+
 import { useState } from 'react';
 import "./Navbar.css"
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
-  const [isOpen, setOpen] = useState(false);
 
+  let Links = [
+      {name: "Home", link: "/", logo:<AiFillHome></AiFillHome>},
+      {name: "Travel", link: "/travel", logo:<AiFillCar></AiFillCar>},
+      {name: "About us", link: "/about", logo: <BsFillInfoCircleFill></BsFillInfoCircleFill>},
+      {name: "Contact", link: "/contact", logo: <RiContactsBookFill></RiContactsBookFill>},
+  ];
+
+  let [open,setOpen]=useState(false);
   return (
     <div>
-      <nav className='nav-item'>
-        <div className='headed flex w-[82%] justify-between items-center m-1 md:m-4 pl-[7px] pr-6 shadow-2xl md:w-[95%] h-[80px] rounded-[13px] fixed md:fixed top-5 left-5 z-[1000] bg-white '>
-          <Link to='/'>
-            <img src='../logo.jpg' className='h-[79px] ' alt='logo' />
-          </Link>
-
-          <div className='menu-icons md:hidden'>
-            <Hamburger toggled={isOpen} toggle={setOpen} />
-          </div>
         
+    <div className=''>
+        <div className='headed  w-[79%]  items-center m-5 pl-[7px] pr-6 shadow-2xl md:w-[95%] h-[80px] rounded-[13px] fixed top-5 left-5 z-[1000]  md:flex bg-[#ffffff] py-1 md:px-5 px-4 flex justify-between'>
+            <div className='cursor-pointer flex items-center'>
+                <img src={logo} className='h-[79px]'></img>
+            </div>
 
-          <ul
-            className={`nav-menu ${
-              isOpen ? 'flex-col gap-2 mt-20 pl-6 pr-6' : 'hidden md:flex md:gap-7 justify-center items-center '
-            }`}
-          >
-            <li className=''>
-              <Link
-                to='/'
-                className='value flex items-center gap-2 '
-                onClick={() => setOpen(true)}
-              >
-                <AiFillHome />
-                Home
-              </Link>
-            </li>
-            <li className=''>
-              <Link
-                to='/travel'
-                className='value flex items-center gap-2'
-                onClick={() => setOpen(true)}
-              >
-                <AiFillCar />
-                Travel
-              </Link>
-            </li>
-            <li className=''>
-              <Link
-                to='/about'
-                className='value flex items-center gap-2'
-                onClick={() => setOpen(true)}
-              >
-                <BsFillInfoCircleFill />
-                About Us
-              </Link>
-            </li>
-            <li className=''>
-              <Link
-                to='/contact'
-                className='value flex items-center gap-2'
-                onClick={() => setOpen(true)}
-              >
-                <RiContactsBookFill />
-                Contact Us
-              </Link>
-            </li>
-            <li>
-            {isAuthenticated && (
-              <div className='user flex'>
-                <p className='user_detail'>{user.name}</p>
-              </div>
-            )}
+            <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+            <Divide name={open ? 'close':'menu'}></Divide>
+            </div>
 
-            <div>
-              {isAuthenticated ? (
+           
+
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#ffffff] gap-10 -mt-[15px] justify-center align-baseline md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in rounded-lg p-[10px] ${open ? 'top-20 ':'top-[-490px]'}`}>
+            {
+            Links.map((link)=>(
+              <div className=' flex gap-[15px] value align-baseline items-center'>
+                <span className='text-[20px]'>{link.logo}</span>
+                <li key={link.name} className='a md:my-0 text-xl'>   
+                <a href={link.link} className= ' text-black duration-500 txt'>{link.name}</a>           
+                </li>   
+                </div>  
+            ))                
+            }
+
+             <li>
+        <div className='flex align-baseline items-baseline gap-8'>
+      {isAuthenticated && (
+            <div className='user flex  gap-3'>
+                
+                    <img src={user.picture} className='h-[35px] rounded-[20%] mt-[7px]' alt={user.name} />
+                    
+                    <p className='user_detail text-[#fff131] text-2xl mt-[10px]'>{user.name}</p>  
+            </div>
+      )}
+
+{isAuthenticated ? (
                 <button
-                  className='btnLogin border-2 border-black p-1 pl-2 pr-2 rounded-md hover:bg-black hover:text-white transition-all duration-200'
-                  onClick={() =>
+                className='class=" p-[5px] font-medium bg-blue-200 hover:bg-blue-100 hover:text-blue-600 text-blue-black rounded-lg text-md"'
+                onClick={() =>
                     logout({ logoutParams: { returnTo: window.location.origin } })
                   }
                 >
@@ -89,19 +69,26 @@ const Navbar = () => {
                 </button>
               ) : (
                 <button
-                  className='btnLogin p-1 pl-2 pr-2 rounded-md '
+                  className='p-[5px] font-medium bg-blue-200 hover:bg-blue-100 hover:text-blue-600 text-blue-black rounded-lg text-md '
                   onClick={() => loginWithRedirect()}
                 >
                   Log In
                 </button>
               )}
-            </div>
-            </li>
-          </ul>
+          </div>
+      
+          </li>
+
+        </ul>
+
         </div>
-      </nav>
+   
     </div>
+  
+</div>
   );
 };
 
 export default Navbar;
+
+
