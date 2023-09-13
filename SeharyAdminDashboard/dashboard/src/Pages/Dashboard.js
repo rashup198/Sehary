@@ -63,7 +63,7 @@ const Dashboard = () => {
           </div>
         )}
 
-        {/* add employee */}
+        {/* add Location */}
         {isAdding && (
           <div className='container mx-auto px-4'>
             <Add
@@ -74,7 +74,7 @@ const Dashboard = () => {
           </div>
         )}
 
-        {/* edit employee */}
+        {/* edit Location */}
         {isEditing && (
           <div className='container mx-auto px-4'>
             <Edit
