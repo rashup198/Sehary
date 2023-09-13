@@ -1,15 +1,19 @@
-@media screen and (max-width: 555px) {
-    .heroimg{
-        margin-top: 120px;
-    }
-    .heroText{
+@media screen and (max-width: 630px) {
+    .textbox{
         
-        
-        font-size: 30px;
-        color: black;
+        position: absolute;
+        top : -320px;
+        width: 44vh;
+        left: -60px;
+    }
+    .textHero{
+        font-size: 27px;
+        font-weight: bolder;
         
     }
-    .arrow{
-        display: none;
+    .textSub{
+        font-size: 20px;
+        font-weight: bolder;
     }
+    
     }
