@@ -5,7 +5,7 @@ import { RiContactsBookFill } from 'react-icons/ri';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Divide, Divide as Hamburger } from 'hamburger-react';
 import logo from "./logo.jpg"
-
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import "./Navbar.css"
 
@@ -40,8 +40,8 @@ const Navbar = () => {
             Links.map((link)=>(
               <div className=' flex gap-[15px] value align-baseline items-center'>
                 <span className='text-[20px]'>{link.logo}</span>
-                <li key={link.name} className='a md:my-0 text-xl'>   
-                <a href={link.link} className= ' text-black duration-500 txt'>{link.name}</a>           
+                <li key={link.name} className='a md:my-0 text-xl'> 
+                <Link to={link.link} className= ' text-black duration-500 txt'>{link.name}</Link>           
                 </li>   
                 </div>  
             ))                

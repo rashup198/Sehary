@@ -3,13 +3,11 @@ import './Hero.css';
 import '../index.css';
 import image1 from './1.jpg';
 import image2 from './2.jpg';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import MovingText from 'react-moving-text';
 import RecentTrip from '../components/RecentTrip';
 import Destinations from '../components/Destinations';
 import Footer from '../components/Footer';
 import Newsletter from '../components/Newsletter';
-import { Carousel } from 'react-responsive-carousel';
 
 const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -21,12 +19,10 @@ const Hero = () => {
   }, []);
 
   const start = () => {
-    console.log('start');
     const _start = setInterval(() => {
       setSelectedImage((selectedImage) =>
         selectedImage < 1 ? selectedImage + 1 : 0
       );
-      console.log('changed hero img');
     },10000);
     setId(_start);
   };

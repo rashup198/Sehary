@@ -4,6 +4,16 @@
 /node_modules
 /.pnp
 .pnp.js
+tailwind.config.js
+postcss.config.js
+craco.config.js
+tsconfig.json
+tsconfig.tsbuildinfo
+tsconfig.test.json
+tsconfig.prod.json
+tsconfig.dev.json
+tsconfig.eslint.json
+
 
 # testing
 /coverage
